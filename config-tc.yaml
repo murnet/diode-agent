@@ -1,0 +1,17 @@
+diode:
+  config:
+    target: ${DIODE_URL}
+    api_key: ${DIODE_API_KEY}
+  policies:
+    discovery_1:
+      config:
+        netbox:
+          site: TC Aeroport
+      data:
+        - hostname: 10.90.10.184
+          driver: ios
+          username: ${USERNAME}
+          password: ${PASSWORD}
+          optional_args:
+            secret: ${SECRET}
+

@@ -1,0 +1,22 @@
+diode:
+  config:
+    target: ${DIODE_URL}
+    api_key: ${DIODE_API_KEY}
+  policies:
+    discovery_1:
+      config:
+        netbox:
+          site: PyLab
+      data:
+        - hostname: 192.168.122.10
+          driver: ios
+          username: ${USERNAME}
+          password: ${PASSWORD}
+          optional_args:
+            secret: ${SECRET}
+        - driver: ios
+          hostname: 192.168.122.50
+          username: ${USERNAME}
+          password: ${PASSWORD}
+          optional_args:
+            secret: ${SECRET}
